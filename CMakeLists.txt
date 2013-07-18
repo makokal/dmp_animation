@@ -91,8 +91,10 @@ include_directories(include
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 install(PROGRAMS
-  nodes/simple_dmp_learn.py
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+    src/dmp_interface.py
+    nodes/simple_dmp_learn.py
+    nodes/squash_stretch.py
+    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
 ## Mark executables and/or libraries for installation
